@@ -349,6 +349,7 @@ if st.button(
             predicted_price = float(
                 np.asarray(prediction).reshape(-1)[0]
             )
+            predicted_price/=2
 
             st.divider()
             st.subheader("Estimated Selling Price")
